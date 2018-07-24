@@ -1,5 +1,5 @@
 {
-  "name": "steam-store-search",
+  "name": "steam-app-search",
   "version": "1.0.0",
   "description": "Steam 플랫폼의 상품을 검색하여 ID를 제공합니다",
   "main": "index.js",
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leegeunhyeok/steam-store-search.git"
+    "url": "git+https://github.com/leegeunhyeok/steam-app-search.git"
   },
   "author": "Leegeunhyeok",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leegeunhyeok/steam-store-search/issues"
+    "url": "https://github.com/leegeunhyeok/steam-app-search/issues"
   },
-  "homepage": "https://github.com/leegeunhyeok/steam-store-search#readme",
+  "homepage": "https://github.com/leegeunhyeok/steam-app-search#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "request": "^2.87.0"
   },
-  "keywords": ["search", "json", "steam", "steam-store"]
+  "keywords": ["search", "json", "steam", "steam-store", "steam-app"]
 }

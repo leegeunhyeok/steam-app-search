@@ -9,7 +9,7 @@ Steam 플랫폼의 상품을 검색하여 상품 타이틀과 고유 ID를 제�
 
 ## 설치
 ```bash
-npm install steam-store-search
+npm install steam-app-search
 ```
 
 ## 모듈 테스트
@@ -22,7 +22,7 @@ npm test
 - 원하는 키워드 문자열을 `search` 메소드의 인자로 전달하면 됩니다.
 - 아래 예제는 `cs` 키워드를 검색한 결과 리스트가 출력됩니다.
 ```javascript
-const SteamSearch = require('steam-store-search').SteamStore
+const SteamSearch = require('steam-app-search').SteamStore
 const SteamStore = new SteamSearch()
 
 // 비동기함수 방식
