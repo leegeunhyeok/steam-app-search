@@ -1,6 +1,11 @@
-# steam-store-search
+<div align="center">
 
-> Steam 플랫폼의 상품을 검색하여 상품 ID를 제공합니다.
+  <img src="./steam-logo.png">
+
+</div>
+
+## 설명
+Steam 플랫폼의 상품을 검색하여 상품 타이틀과 고유 ID를 제공합니다.
 
 ## 설치
 ```bash
@@ -38,5 +43,6 @@ promiseMet()
 ```
 ## 개발자
 - `Leegeunhyeok` - [Github](https://github.com/leegeunhyeok)
+
 ## 라이센스
 - MIT
