@@ -34,9 +34,10 @@ class SteamStore {
       // 해당 상품 타이틀과 ID 조회
       $('.search_result_row').each(function(idx) {
         const title = $(this).find('.title').text()
-        const temp_id = /\/(\d+)/.exec($(this).attr('href'))
+        const href = $(this).attr('href')
+        const temp_id = /\/(\d+)/.exec(href)
         const id = temp_id ? temp_id[1] : undefined
-        searchList.push({title: title, id: id})
+        searchList.push({title: title, src: href, id: id})
       })
 
       // 결과 반환

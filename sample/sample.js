@@ -1,4 +1,4 @@
-const SteamSearch = require('../src/index.js').SteamStore
+const SteamSearch = require('../index.js').SteamStore
 const SteamStore = new SteamSearch()
 
 const asyncFunc = async () => {
