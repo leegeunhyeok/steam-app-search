@@ -1,7 +1,7 @@
 {
   "name": "steam-app-search",
-  "version": "1.0.3",
-  "description": "Steam 플랫폼의 상품을 검색하여 ID를 제공합니다",
+  "version": "1.0.4",
+  "description": "Steam 플랫폼의 상품을 검색하여 ID, 상세정보를 제공합니다",
   "main": "index.js",
   "scripts": {
     "test": "node ./sample/sample.js"

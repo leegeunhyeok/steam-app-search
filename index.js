@@ -52,6 +52,38 @@ class SteamStore {
 
     }
   }
+
+  /**
+   * @description appId에 해당하는 제품의 자세한 정보를 제공합니다.
+   * @param {string} 조회할 appId
+   * @param {string} 국가 코드 (기본값: us)
+   * @return {any} appId에 해당하는 제품의 상세 정보 객체
+   */
+  async detail (appId, lang) {
+    try {
+      // 국가 코드가 없는 경우 기본값으로 us 사용
+      lang = lang || 'us'
+
+      const $body = await new Promise((resolve, reject) => {
+        request(`https://store.steampowered.com/api/appdetails?appids=${appId}&cc=${lang}&l=${lang}`, (err, res, body) => {
+          if (err) {
+            reject(err)
+          }
+          resolve(body)
+        })
+      })
+
+      return JSON.parse($body)
+
+    } catch (e) {
+
+      console.log(e)
+
+      // 빈 객체 반환
+      return {}
+
+    }
+  }
 }
 
 exports.SteamStore = SteamStore

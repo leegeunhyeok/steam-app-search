@@ -5,7 +5,7 @@
 </div>
 
 ## 설명
-Steam 플랫폼의 상품을 검색하여 상품 타이틀과 고유 ID를 제공합니다.
+Steam 플랫폼의 상품을 검색하여 상품 타이틀과 고유 ID, 상세정보를 제공합니다.
 
 ## 설치
 ```bash
@@ -27,7 +27,15 @@ const SteamStore = new SteamSearch()
 
 // 비동기함수 방식
 const asyncFunc = async () => {
-  console.log(await SteamStore.search('cs'))
+  /* CS 키워드 검색 */
+  const result = await SteamStore.search('cs')
+
+  /* 검색 결과 중 첫 번째 항목의 ID 상세정보 조회 */
+  /* 두 번째 인자로 국가코드 입력, 예제는 한국어 정보 조회 */
+  const detail = await SteamStore.detail(result[0].id, 'koreana')
+
+  console.log(result)
+  console.log(detail)
 }
 
 // 프라미스 방식
